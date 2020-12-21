@@ -1,0 +1,32 @@
+html,body{height: 100%; margin: 0; padding: 0px;  font-family: 'Oswald', sans-serif; background-color: #ebecee;}
+
+.land{ height: 100%; background: url(https://images.unsplash.com/photo-1471086569966-db3eebc25a59?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80); background-repeat: no-repeat; background-position: center; background-size: cover;}
+
+.nav{width: 100%;display: flex; justify-content: center; }
+.nav_item{display: flex; justify-content: center; width: 18%; font-size: 18px;}
+.nav_item a:hover{background: #bebfc2; border-bottom: 2px solid #000000;}
+.nav_item_home {color: #000000; text-decoration: none; padding: 5px 22px; border-bottom: 2px solid #000000;}
+.nav_item_about {color: #000000; text-decoration: none; padding: 5px 18px;}
+
+
+.cover{height: 88%; display: flex; flex-direction: row-reverse; align-items: center;}
+.cover_caption{margin: 0; font-size: 120px; margin-right: 125px; animation-duration:  1s;}
+
+.article {display: flex; height: 90%; align-items: center;}
+.article_copy{width: 50%; margin-left:80px; margin-right: 50px;}
+
+.offers_title {display: flex; justify-content: center; align-self: center; font-size: 50px;}
+
+.product_card{display: flex; justify-content: center;}
+.product_card_copy{ width: 80%; display: flex; justify-content: space-between; margin: 50px 0; flex-wrap: wrap;}
+
+
+
+
+.flip_container{position: relative; width: 230px; height: 280px; border-radius: 10px; margin: 40px 30px;}
+.flip_card{position: absolute; width: 100%; height: 100%; transform-style: preserve-3d; transition: all 0.5s ease;}
+.flip_card:hover{transform: rotateY(180deg);}
+.flip_card_front{ display: flex; justify-content: center; align-items: center; flex-direction: column; border-radius: 10px;position: absolute; width: 100%; height: 100%; backface-visibility: hidden; background: #cccdcf; color: #333;}
+
+.flip_card_back{ border-radius: 10px;position: absolute; width: 100%; height: 100%; backface-visibility: hidden; background: #414142; color: #ffffff; transform: rotateY(180deg);}
+.flip_card_back ul{display: flex; flex-direction: column; align-items: center; justify-content: center; height: 280px; width: 230px;}
